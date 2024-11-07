@@ -27,4 +27,27 @@ module "enterprise_scale" {
 
   library_path                = "${path.root}/lib"
   deploy_core_landing_zones   = true
+
+  custom_landing_zones = {
+    "Landing-Zone-Dev" = {
+      display_name               = "Landings Zones - Dev"
+      parent_management_group_id = "Accern-landing-zones"
+      subscription_ids           = []
+      archetype_config = {
+        archetype_id   = "customer_dev"
+        parameters     = {}
+        access_control = {}
+      }
+    }
+    "Landing-Zone-Prod" = {
+      display_name               = "Landings Zones - Prod"
+      parent_management_group_id = "Accern-landing-zones"
+      subscription_ids           = []
+      archetype_config = {
+        archetype_id   = "customer_prod"
+        access_control = {}
+        parameters     = {}
+      }
+    }
+  }
 }
