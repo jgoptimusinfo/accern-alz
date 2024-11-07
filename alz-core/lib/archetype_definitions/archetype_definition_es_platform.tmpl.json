@@ -1,7 +1,6 @@
 {
   "es_platform": {
     "policy_assignments": [
-      "DenyAction-DeleteUAMIAMA",
       "Deploy-MDFC-DefSQL-AMA",
       "Deploy-VM-ChangeTrack",
       "Deploy-VM-Monitoring",
@@ -9,9 +8,7 @@
       "Deploy-vmHybr-Monitoring",
       "Deploy-VMSS-ChangeTrack",
       "Deploy-VMSS-Monitoring",
-      "Enable-AUM-CheckUpdates",
-      "Enforce-ASR",
-      "Enforce-GR-KeyVault"
+      "Enable-AUM-CheckUpdates"
     ],
     "policy_definitions": [],
     "policy_set_definitions": [],

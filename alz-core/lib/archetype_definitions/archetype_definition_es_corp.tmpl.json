@@ -1,11 +1,7 @@
 {
   "es_corp": {
     "policy_assignments": [
-      "Audit-PeDnsZones",
-      "Deny-HybridNetworking",
-      "Deny-Public-Endpoints",
-      "Deny-Public-IP-On-NIC",
-      "Deploy-Private-DNS-Zones"
+      "Audit-PeDnsZones"
     ],
     "policy_definitions": [],
     "policy_set_definitions": [],
