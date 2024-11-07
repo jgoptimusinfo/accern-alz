@@ -1,9 +1,6 @@
 {
   "es_identity": {
     "policy_assignments": [
-      "Deny-MgmtPorts-Internet",
-      "Deny-Public-IP",
-      "Deploy-VM-Backup"
     ],
     "policy_definitions": [],
     "policy_set_definitions": [],
