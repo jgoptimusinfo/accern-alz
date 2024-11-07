@@ -22,8 +22,8 @@ module "enterprise_scale" {
   }
 
   root_parent_id = data.azurerm_client_config.core.tenant_id
-  root_id        = "accern"
-  root_name      = "My Organization" # "Tenant Root Group"
+  root_id        = "Accern"
+  root_name      = "Accern Organization" # "Tenant Root Group"
 
   deploy_core_landing_zones   = true
 }
