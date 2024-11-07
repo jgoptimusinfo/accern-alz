@@ -43,9 +43,10 @@ module "enterprise_scale" {
       display_name               = "Landings Zones - Prod"
       parent_management_group_id = "Accern-landing-zones"
       subscription_ids           = []
-      archetype_config  = {
-        archetype_id    = "customer_prod"
-        access_control  = {}
+      archetype_config = {
+        archetype_id   = "customer_prod"
+        access_control = {}
+        parameters     = {}
       }
     }
   }
