@@ -29,12 +29,12 @@ module "enterprise_scale" {
   deploy_core_landing_zones   = true
 
   custom_landing_zones = {
-    "Sandboxes" = {
-      display_name               = "Sandboxes"
+    "Landing-Zone-Dev" = {
+      display_name               = "Landings Zones - Dev"
       parent_management_group_id = "Accern-landing-zones"
       subscription_ids           = []
       archetype_config = {
-        archetype_id   = "es_sandboxes"
+        archetype_id   = "customer_dev"
         parameters     = {}
         access_control = {}
       }
@@ -43,17 +43,9 @@ module "enterprise_scale" {
       display_name               = "Landings Zones - Prod"
       parent_management_group_id = "Accern-landing-zones"
       subscription_ids           = []
-      archetype_config = {
-        archetype_id = "customer_prod"
-        parameters = {
-          Deny-Resource-Locations = {
-            listOfAllowedLocations = ["eastus", "eastus2"]
-          }
-          Deny-RSG-Locations = {
-            listOfAllowedLocations = ["eastus", "eastus2"]
-          }
-        }
-        access_control = {}
+      archetype_config  = {
+        archetype_id    = "customer_prod"
+        access_control  = {}
       }
     }
   }
