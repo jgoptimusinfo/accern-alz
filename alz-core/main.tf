@@ -25,5 +25,6 @@ module "enterprise_scale" {
   root_id        = "Accern"
   root_name      = "Accern Organization" # "Tenant Root Group"
 
+  library_path                = "${path.root}/lib"
   deploy_core_landing_zones   = true
 }
