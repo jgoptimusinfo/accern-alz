@@ -11,7 +11,7 @@ locals {
  
 module "enterprise_scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = "<version>" # change this to your desired version, https://www.terraform.io/language/expressions/version-constraints
+  version = "6.1.0"
 
   default_location = var.location
 
