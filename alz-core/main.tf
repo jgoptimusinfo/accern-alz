@@ -25,5 +25,5 @@ module "enterprise_scale" {
   root_id        = "accern"
   root_name      = "My Organization" # "Tenant Root Group"
 
-  deploy_core_landing_zones   = false
+  deploy_core_landing_zones   = true
 }
