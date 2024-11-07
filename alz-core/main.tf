@@ -25,6 +25,5 @@ module "enterprise_scale" {
   root_id        = "accerntest"
   root_name      = "Tenant Root Group"
 
-  deploy_management_resources = false
-  subscription_id_management  = data.azurerm_client_config.core.subscription_id
+  deploy_core_landing_zones   = true
 }
