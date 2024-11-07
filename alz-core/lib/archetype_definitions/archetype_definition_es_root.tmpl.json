@@ -1,8 +1,21 @@
 {
   "es_root": {
-    "policy_assignments": [],
-    "policy_definitions": [],
-    "policy_set_definitions": [],
+    "policy_assignments": [
+      "Audit-ResourceRGLocation",
+      "Audit-TrustedLaunch",
+      "Audit-UnusedResources",
+      "Audit-ZoneResiliency"],
+    "policy_definitions": [
+      "Audit-Disks-UnusedResourcesCostOptimization",
+      "Audit-MachineLearning-PrivateEndpointId",
+      "Audit-PrivateLinkDnsZones",
+      "Audit-PublicIpAddresses-UnusedResourcesCostOptimization",
+      "Audit-ServerFarms-UnusedResourcesCostOptimization"
+    ],
+    "policy_set_definitions": [
+      "Audit-TrustedLaunch",
+      "Audit-UnusedResourcesCostOptimization"
+    ],
     "role_definitions": [
       "Network-Subnet-Contributor",
       "Application-Owners",

@@ -1,11 +1,6 @@
 {
   "es_platform": {
-    "policy_assignments": [
-      "Deploy-VM-ChangeTrack",
-      "Deploy-VM-Monitoring",
-      "Deploy-VMSS-ChangeTrack",
-      "Deploy-VMSS-Monitoring"
-    ],
+    "policy_assignments": [],
     "policy_definitions": [],
     "policy_set_definitions": [],
     "role_definitions": [],
