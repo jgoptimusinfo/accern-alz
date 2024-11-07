@@ -5,8 +5,8 @@
     "policy_set_definitions": [],
     "role_definitions": [],
     "archetype_config": {
-        "parameters": {},
-        "access_control": {}
+      "parameters": {},
+      "access_control": {}
     }
   }
 }
