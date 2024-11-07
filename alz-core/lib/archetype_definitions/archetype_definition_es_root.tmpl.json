@@ -4,11 +4,8 @@
       "Audit-UnusedResources"
     ],
     "policy_definitions": [
-      "Audit-Disks-UnusedResourcesCostOptimization",
-      "Audit-PublicIpAddresses-UnusedResourcesCostOptimization"
     ],
     "policy_set_definitions": [
-      "Audit-UnusedResourcesCostOptimization"
     ],
     "role_definitions": [
       "Network-Subnet-Contributor",
