@@ -34,7 +34,7 @@ module "enterprise_scale" {
       parent_management_group_id = "Accern-landing-zones"
       subscription_ids           = []
       archetype_config = {
-        archetype_id   = "customer_dev"
+        archetype_id   = "default_empty"
         parameters     = {}
         access_control = {}
       }
@@ -44,7 +44,7 @@ module "enterprise_scale" {
       parent_management_group_id = "Accern-landing-zones"
       subscription_ids           = []
       archetype_config = {
-        archetype_id   = "customer_prod"
+        archetype_id   = "default_empty"
         access_control = {}
         parameters     = {}
       }
