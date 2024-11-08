@@ -1,8 +1,7 @@
 {
   "es_identity": {
     "policy_assignments": [
-      "Deny-Public-IP",
-      "Deny-Subnet-Without-Nsg"
+      "Deny-Public-IP"
     ],
     "policy_definitions": [],
     "policy_set_definitions": [],
