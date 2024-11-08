@@ -149,7 +149,7 @@ locals {
           },
           ddos = {
             (var.connectivity_resources_location) = {
-              name = "acn-connectivity-prd-cace-rg-01"
+              name = "acn-ddos-prd-cace-rg-01"
             }
           },
           dns = {
