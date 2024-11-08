@@ -42,6 +42,16 @@ locals {
 
     location = var.management_resources_location
     tags     = var.management_resources_tags
-    advanced = null
+    advanced = {
+      resource_prefix = "acn"
+      resource_suffix = "prd-cace"
+      custom_settings_by_resource_type = {
+        azurerm_resource_group = {
+          management = {
+            name = "acn-monitoring-prd-cace-rg-01"
+          }
+        }
+      }
+    }
   }
 }
