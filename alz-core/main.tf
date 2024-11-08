@@ -24,7 +24,8 @@ module "enterprise_scale" {
   root_parent_id = data.azurerm_client_config.core.tenant_id
   root_id        = "Accern"
   root_name      = "Accern Organization" # "Tenant Root Group"
-
+  
+  disable_telemetry = true
   library_path                = "${path.root}/lib"
   
   deploy_core_landing_zones   = true
