@@ -2,7 +2,6 @@
   "es_identity": {
     "policy_assignments": [
       "Deny-Public-IP",
-      "Deny-RDP-From-Internet",
       "Deny-Subnet-Without-Nsg"
     ],
     "policy_definitions": [],
