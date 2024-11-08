@@ -143,7 +143,9 @@ locals {
       custom_settings_by_resource_type = {
         azurerm_resource_group = {
           connectivity = {
-            name = "acn-connectivity-prd-cace-rg-01"
+            (var.connectivity_resources_location) = {
+                name = "acn-connectivity-prd-cace-rg-01"
+            }
           }
         }
       }
