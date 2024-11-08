@@ -56,7 +56,7 @@ locals {
         }
       }
       dns = {
-        enabled = true
+        enabled = false
         config = {
           location = null
           enable_private_link_by_service = {
