@@ -53,11 +53,15 @@ module "enterprise_scale" {
     }
   }
 
-  deploy_management_resources    = true
+  deploy_management_resources    = false
   subscription_id_management     = data.azurerm_client_config.core.subscription_id # replace is Management Subscription ID
   configure_management_resources = local.configure_management_resources
 
-  deploy_identity_resources    = true
+  deploy_identity_resources    = false
   subscription_id_identity     = data.azurerm_client_config.core.subscription_id # replace is Identity Subscription ID
   configure_identity_resources = local.configure_identity_resources
+
+  deploy_connectivity_resources    = true
+  subscription_id_connectivity     = data.azurerm_client_config.core.subscription_id # replace is Connectivity Subscription ID
+  configure_connectivity_resources = local.configure_connectivity_resources
 }

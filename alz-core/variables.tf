@@ -52,7 +52,29 @@ variable "management_resources_location" {
 variable "management_resources_tags" {
   type = map(string)
   default = {
-    environment = "Plaform"
-    costcenter  = "it"
+    environment = "Plaform Management"
+    costcenter  = "IT"
+  }
+}
+
+## ------------------------------------
+##  CONNECTIVITY RESOURCE VARIABLES
+## ------------------------------------
+
+variable "deploy_connectivity_resources" {
+  type    = bool
+  default = false
+}
+
+variable "connectivity_resources_location" {
+  type    = string
+  default = "eastus"
+}
+
+variable "connectivity_resources_tags" {
+  type = map(string)
+  default = {
+    environment = "Plaform Connectivity"
+    costcenter  = "IT"
   }
 }
