@@ -147,9 +147,9 @@ locals {
               name = "acn-connectivity-prd-cace-rg-01"
             }
           },
-          ddos_protection_plan = {
+          ddos = {
             (var.connectivity_resources_location) = {
-              name = "acn-ddos-prd-cace-rg-01"
+              name = "acn-connectivity-prd-cace-rg-01"
             }
           },
           dns = {
