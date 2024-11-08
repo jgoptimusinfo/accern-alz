@@ -12,7 +12,7 @@ locals {
             sku            = ""
             routes         = []
             expressroute_gateway = {
-              enabled = true
+              enabled = false
               config = {
                 scale_unit = 1
                 allow_non_virtual_wan_traffic = false
@@ -38,8 +38,8 @@ locals {
                 threat_intelligence_allowlist = {}
                 availability_zones = {
                   zone_1 = true
-                  zone_2 = true
-                  zone_3 = true
+                  zone_2 = false
+                  zone_3 = false
                 }
               }
             }
@@ -50,13 +50,13 @@ locals {
         }
       ]
       ddos_protection_plan = {
-        enabled = false
+        enabled = true
         config = {
           location = var.connectivity_resources_location
         }
       }
       dns = {
-        enabled = false
+        enabled = true
         config = {
           location = null
           enable_private_link_by_service = {
