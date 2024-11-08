@@ -26,6 +26,7 @@ module "enterprise_scale" {
   root_name      = "Accern Organization" # "Tenant Root Group"
 
   library_path                = "${path.root}/lib"
+  
   deploy_core_landing_zones   = true
 
   custom_landing_zones = {
@@ -50,4 +51,8 @@ module "enterprise_scale" {
       }
     }
   }
+
+  deploy_management_resources    = true
+  subscription_id_management     = data.azurerm_client_config.core.subscription_id # replace is Management Subscription ID
+  configure_management_resources = local.configure_management_resources
 }
