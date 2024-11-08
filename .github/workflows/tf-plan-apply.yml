@@ -76,7 +76,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: tfplan
-        path: ./infra-core/tfplan
+        path: ./alz-core/
         
     # Create string output of Terraform Plan
     - name: Create String Output
