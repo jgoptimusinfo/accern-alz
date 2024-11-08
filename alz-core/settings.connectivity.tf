@@ -138,12 +138,12 @@ locals {
     location = var.connectivity_resources_location
     tags     = var.connectivity_resources_tags
     advanced = {
-#      resource_prefix = "acn"
-#      resource_suffix = "prd-cace"
+      resource_prefix = "acn"
+      resource_suffix = "prd-cace"
       custom_settings_by_resource_type = {
         azurerm_resource_group = {
-          connectivity = {
-            eastus = {
+          virtual_wan = {
+            (var.connectivity_resources_location) = {
               name = "acn-connectivity-prd-cace-rg-01"
             }
           }
