@@ -137,6 +137,16 @@ locals {
 
     location = var.connectivity_resources_location
     tags     = var.connectivity_resources_tags
-    advanced = null
+    advanced = {
+      resource_prefix = "acn"
+      resource_suffix = "prd-cace"
+      custom_settings_by_resource_type = {
+        azurerm_resource_group = {
+          connectivity = {
+            name = "acn-connectivity-prd-cace-rg-01"
+          }
+        }
+      }
+    }
   }
 }
