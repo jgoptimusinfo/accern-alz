@@ -2,6 +2,17 @@ name: 'Terraform Plan/Apply'
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+    - main
+    paths:
+    - 'alz-core/**'
+  
+  pull_request:
+    branches:
+    - main
+    paths:
+    - 'alz-core/**'
 
 # Special permissions required for OIDC authentication
 permissions:
