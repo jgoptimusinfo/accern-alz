@@ -14,7 +14,6 @@ on:
     paths:
     - 'alz-core/**'
 
-# Special permissions required for OIDC authentication
 permissions:
   id-token: write
   contents: read
