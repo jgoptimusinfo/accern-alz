@@ -43,10 +43,10 @@ module "rule_collection_group" {
         {
           name                  = "OutboundToInternet"
           description           = "Allow traffic outbound to the Internet"
-          destination_addresses = ["*"] # ["0.0.0.0/0"]
-          destination_ports     = ["*"] # ["443"]
-          source_addresses      = ["*"] # ["10.0.0.0/24"]
-          protocols             = ["TCP", "UDP", "ICMP"] # ["TCP"]
+          destination_addresses = ["*"] 
+          destination_ports     = ["*"] 
+          source_addresses      = ["*"]
+          protocols             = ["TCP", "UDP", "ICMP"]
         }
       ]
     }
@@ -68,25 +68,6 @@ module "rule_collection_group" {
             }
           ]
           destination_fqdns = ["microsoft.com"]
-        }
-      ]
-    }
-  ]
-  firewall_policy_rule_collection_group_nat_rule_collection = [
-    {
-      action   = "Dnat"
-      name     = "NatRuleCollection"
-      priority = 100
-      rule = [
-        {
-          name                  = "DNATRule"
-          description           = "DNAT rule for inbound https traffic"
-          translated_address    = "172.16.1.5"
-          translated_port       = 443
-          source_addresses      = ["*"]
-          destination_addresses = module.firewall.resource.virtual_hub[*].public_ip_addresses[0]
-          destination_ports     = ["443"]
-          protocols             = ["TCP"]
         }
       ]
     }
